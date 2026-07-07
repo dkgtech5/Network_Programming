@@ -1,0 +1,20 @@
+[2026-07-07 07:18:33] Client Connected
+[2026-07-07 07:18:37] Login Success : admin
+[2026-07-07 07:18:39] Command : ls
+[2026-07-07 07:18:51] Command : cat logs/server.log
+[2026-07-07 07:18:51] Blocked Command : cat logs/server.log
+[2026-07-07 07:19:09] Command : pwd
+[2026-07-07 07:22:00] Client Connected
+[2026-07-07 07:22:05] Login Success : admin
+[2026-07-07 07:22:11] Command : pwd
+[2026-07-07 07:22:13] Command : ls
+[2026-07-07 07:22:22] Client Connected
+[2026-07-07 07:22:29] Login Success : admin
+[2026-07-07 07:22:34] Command : date
+[2026-07-07 07:22:44] Command : ls
+[2026-07-07 07:29:03] Client Connected
+[2026-07-07 07:29:09] Login Success : admin
+[2026-07-07 07:29:11] Command : ls
+[2026-07-07 07:29:37] Client Connected
+[2026-07-07 07:29:41] Login Success : admin
+[2026-07-07 07:29:45] Command : ls
