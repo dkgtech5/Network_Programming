@@ -60,77 +60,27 @@ RemoteCommandExecution/
 
 ---
 
-# 🏗️ System Architecture
+## 🏗️ System Architecture
 
-```text
-+----------------------+
-|       Client         |
-|----------------------|
-| • Login              |
-| • Send Command       |
-| • Receive Output     |
-+----------+-----------+
-           |
-           | TCP Socket
-           |
-+----------v-----------+
-|       Server         |
-|----------------------|
-| • Authentication     |
-| • Validate Command   |
-| • Execute Command    |
-| • Log Activity       |
-| • Send Result        |
-+----------+-----------+
-           |
-           |
-+----------v-----------+
-| Linux Operating      |
-| System               |
-+----------------------+
-```
+<p align="center">
+  <img src="images/architecture.png" width="800">
+</p>
 
 ---
 
-# 🔄 System Workflow
+## 🔄 System Workflow
 
-```text
-Client Starts
-      │
-      ▼
-Connect to Server
-      │
-      ▼
-Enter Username & Password
-      │
-      ▼
-Authentication Successful?
-      │            │
-     No           Yes
-      │            │
-Disconnect   Send Command
-                  │
-                  ▼
-      Is Command Allowed?
-          │            │
-         No           Yes
-          │            │
-   Send Error   Execute Command
-                      │
-                      ▼
-              Capture Output
-                      │
-                      ▼
-          Send Result to Client
-                      │
-                      ▼
-              More Commands?
-                  │      │
-                 Yes     No
-                  │       │
-          Send Command  Disconnect
-```
+<p align="center">
+  <img src="images/workflow.png" width="800">
+</p>
 
+---
+
+## 🖥️ Sample Output
+
+<p align="center">
+  <img src="images/output.png" width="900">
+</p>
 ---
 
 # 🔑 Default Login Credentials
